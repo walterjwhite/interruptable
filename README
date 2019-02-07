@@ -1,0 +1,4 @@
+1. marks methods as interruptable
+2. provides a means for those methods to be interrupted
+3. provides a means to track method invocations
+4. provides a means to shutdown services gracefully <- TODO: this is half-baked
