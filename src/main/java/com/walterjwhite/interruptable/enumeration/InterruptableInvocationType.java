@@ -1,12 +1,11 @@
 package com.walterjwhite.interruptable.enumeration;
 
 import com.walterjwhite.interruptable.InterruptableRegistry;
-import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 
 // aspectj runs before, check if I need to swap the maven config
 // @Getter
-public enum InterruptableInvocationType implements InterruptableTypeDelegate{
+public enum InterruptableInvocationType implements InterruptableTypeDelegate {
   Task,
   Application;
 

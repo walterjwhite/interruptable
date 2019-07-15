@@ -9,6 +9,8 @@ import java.util.Set;
 import org.aspectj.lang.JoinPoint;
 
 public class InterruptableRegistry {
+  // during initialization, only a single thread should be creating these instances
+  // during shutdown, only a single thread should be destroying these instances
   protected final Set<InterruptableWeakReference> interruptableReferences = new HashSet<>();
 
   static {

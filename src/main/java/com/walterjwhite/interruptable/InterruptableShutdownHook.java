@@ -1,8 +1,7 @@
 package com.walterjwhite.interruptable;
 
-import com.walterjwhite.interruptable.enumeration.InterruptableTypeShutdownOrder;
 import com.walterjwhite.interruptable.enumeration.InterruptableTypeDelegate;
-
+import com.walterjwhite.interruptable.enumeration.InterruptableTypeShutdownOrder;
 import java.util.Arrays;
 
 public class InterruptableShutdownHook extends Thread {
