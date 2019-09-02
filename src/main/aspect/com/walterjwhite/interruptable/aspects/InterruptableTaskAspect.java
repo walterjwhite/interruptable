@@ -10,9 +10,9 @@ public class InterruptableTaskAspect {
   /**
    * Wrap all InterruptableTask invocations
    *
-   * @param point the method to interrupt if the JVM shuts down.
-   * @return
-   * @throws Throwable
+   * @param proceedingJoinPoint the method to interrupt if the JVM shuts down.
+   * @return result of invocation
+   * @throws Throwable if there is an exception during invocation
    */
   @Around(
       "execution(* *(..)) && @annotation(com.walterjwhite.interruptable.annotation.InterruptableTask) && !within(com.walterjwhite.interruptable.*)")

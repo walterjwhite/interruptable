@@ -10,9 +10,8 @@ public class InterruptableServiceAspect {
   /**
    * Register services
    *
-   * @param point
-   * @return
-   * @throws Throwable
+   * @param joinPoint reference to method prior to execution
+   * @throws Throwable if there is a problem registering this join point
    */
   @Before(
       "execution(*.new(..)) && @within(com.walterjwhite.interruptable.annotation.InterruptableService) && !within(com.walterjwhite.interruptable.*)")

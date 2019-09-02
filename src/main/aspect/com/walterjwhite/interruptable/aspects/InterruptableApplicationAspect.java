@@ -10,9 +10,9 @@ public class InterruptableApplicationAspect {
   /**
    * Wrap all InterruptableApplication invocations
    *
-   * @param point the method to interrupt if the JVM shuts down.
-   * @return
-   * @throws Throwable
+   * @param proceedingJoinPoint the method to interrupt if the JVM shuts down.
+   * @return result of invocation
+   * @throws Throwable if invocation fails for any reason
    */
   @Around(
       "execution(* *(..)) && @annotation(com.walterjwhite.interruptable.annotation.InterruptableApplication) && !within(com.walterjwhite.interruptable.*)")
