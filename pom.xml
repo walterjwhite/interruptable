@@ -84,7 +84,4 @@
     <url>https://github.com/walterjwhite/interruptable.git</url>
     <tag>java-0.0.16</tag>
   </scm>
-  <properties>
-    <aspectj.version>1.9.2</aspectj.version>
-  </properties>
 </project>

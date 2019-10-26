@@ -72,7 +72,7 @@
 //            }
 //        }
 //
-//        throw (new IllegalStateException("Unable to resolve dependency for:" + serviceClass));
+//        throw new IllegalStateException("Unable to resolve dependency for:" + serviceClass));
 //    }
 //
 //    private static List<ServiceDefinition> sortPatches(final Set<ServiceDefinition> firstLevel) {
@@ -115,7 +115,7 @@
 //    private static void checkForCycle(Set<ServiceDefinition> serviceDefinitions) {
 //        for (ServiceDefinition serviceDefinition : serviceDefinitions) {
 //            if (!serviceDefinition.getInEdges().isEmpty()) {
-//                throw (new IllegalStateException("Cycle detected, blew up."));
+//                throw new IllegalStateException("Cycle detected, blew up."));
 //            }
 //        }
 //    }
